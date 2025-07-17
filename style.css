@@ -1,0 +1,107 @@
+:root {
+    --bg: #f5f5f5;
+    --text: #222;
+    --header: #0077cc;
+    --footer: #333;
+    --card: #fff;
+}
+
+body.dark {
+    --bg: #121212;
+    --text: #eee;
+    --header: #1e1e1e;
+    --footer: #000;
+    --card: #1e1e1e;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+header {
+    background: var(--header);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #005fa3;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a, #toggleDark {
+    color: white;
+    background: transparent;
+    border: none;
+    padding: 8px 12px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: var(--card);
+    box-sizing: border-box;
+}
+
+textarea, input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.comment {
+    background: #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+body.dark .comment {
+    background: #444;
+    color: white;
+}
+
+footer {
+    background: var(--footer);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a, #toggleDark {
+        font-size: 0.9rem;
+    }
+}

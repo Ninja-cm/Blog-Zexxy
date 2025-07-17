@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <title>Blog Nabil Ramadhani Mabruri</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Blog Nabil Ramadhani Mabruri</h1>
+        <p>Lulusan SMK Muhammadiyah 2 Banjarsari - TKJ</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang Saya</a>
+        <a href="contact.html">Kontak</a>
+        <button id="toggleDark">🌙</button>
+    </nav>
+
+    <main>
+        <img src="img/profile.jpg" alt="Foto Profil Nabil" style="width:120px;border-radius:50%;margin-bottom:20px;">
+        <article>
+            <h2>Selamat Datang!</h2>
+            <p>Hai! Saya Nabil, lulusan Teknik Komputer dan Jaringan. Di blog ini saya akan berbagi cerita, pengalaman belajar jaringan, dan teknologi yang saya pelajari.</p>
+        </article>
+
+        <section class="comment-section">
+            <h3>Komentar</h3>
+            <div id="comments"></div>
+            <textarea id="commentInput" placeholder="Tulis komentarmu..."></textarea>
+            <button onclick="addComment()">Kirim Komentar</button>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Nabil Ramadhani Mabruri.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
